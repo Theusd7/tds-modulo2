@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio da Casa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #c0392b;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    table {
+      border: 1px solid #aaa;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 700px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 18px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f7b267;
+      color: #fff;
+      font-size: 1.1em;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #fdf4ea;
+    }
+
+    tbody tr:hover {
+      background-color: #fce8d5;
+    }
+
+    td {
+      color: #333;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cardapio</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>pratos</th>
+        <th>Preço</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Risoto</td>
+        <td>R$ 35,90</td>
+      </tr>
+      <tr>
+        <td>Macarronada</td>
+        <td>R$ 25,80</td>
+      </tr>
+      <tr>
+        <td>Hamburger artesanal</td>
+        <td>R$ 29,80</td>
+      </tr>
+      <tr>
+        <td>Frango com legumes</td>
+        <td>R$ 30,70</td>
+      </tr>
+      <tr>
+        <td>Picanha na pedra</td>
+        <td>R$ 65,40</td>
+      </tr>
+      <tr>
+        <td>Água com gás</td>
+        <td>R$ 3,40</td>
+      </tr>
+      <tr>
+        <td>Refrigerante</td>
+        <td>R$ 5,30</td>
+      </tr>
+      <tr>
+        <td>Petit Gateau</td>
+        <td>R$ 12,80</td>
+      </tr>
+      <tr>
+        <td>Mousse de chocolate</td>
+        <td>R$ 9,30</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
