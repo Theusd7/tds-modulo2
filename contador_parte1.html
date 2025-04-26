@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 100vh
+        }
+        button {
+            font-size: 30px;
+            color: cadetblue;
+        }
+        #contador {
+            margin-bottom: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="contador">
+        <h1>0</h1>
+    </div>
+    <button>+1</button>
+    <script>
+        const contador = document.querySelector("#contador h1");
+        const botao = document.querySelector("button");
+        
+        let count = 0;
+        
+        botao.addEventListener("click", () => {
+            count++;
+            contador.innerText = count;
+        });
+    </script>
+    
+</body>
+</html>
