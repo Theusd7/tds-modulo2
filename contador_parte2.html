@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 100vh
+        }
+        button {
+            font-size: 30px;
+            color: cadetblue;
+        }
+        #contador {
+            margin-bottom: 20px;
+            color: black;
+        }
+        .botoes {
+            display: flex;
+            gap: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="contador">
+        <h1>0</h1>
+    </div>
+    <div class="botoes">
+        <button id="botao1">+1</button>
+        <button id="botao2">-1</button>
+    </div>
+    <script>
+        const contador = document.querySelector("#contador h1");
+        const botao1 = document.querySelector("botao1");
+        const botao2 = document.querySelector("botao2");
+        
+        let count = 0;
+        
+        botao1.addEventListener("click", () => {
+            count++;
+            contador.innerText = count;
+        });
+        botao2.addEventListener("click", () => {
+            count--;
+            contador.innerText = count;
+        });
+    </script>
+</body>
+</html>
