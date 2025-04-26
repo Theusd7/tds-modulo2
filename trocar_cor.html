@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Cor de Fundo</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+        button {
+            font-size: 16px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Clique aqui para mudar a cor de fundo</h1>
+    <button onclick="trocarCor()">Trocar Cor</button>
+
+    <script>
+        function trocarCor() {
+            const cores = ["#ff6666", "#66ff66", "#6666ff", "#ffff66", "#66ffff", "#ff66ff"];
+            document.body.style.backgroundColor = cores[Math.floor(Math.random() * cores.length)];
+        }
+    </script>
+
+</body>
+</html>
