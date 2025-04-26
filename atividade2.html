@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #texto {
+            color: rgb(228, 37, 62);
+            margin-bottom: 5px ;
+            margin-left: 1px;
+            margin-right: 1px;
+            opacity: 0;
+        }
+        div {
+            color: azure;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 100vh;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="texto">shazammmm</h1>
+        <button id="botao">apareça texto escondido!</button>
+    </div>
+    <script>
+        document.getElementById("botao").addEventListener("click", function() {
+            document.getElementById("texto").style.opacity = 1;
+        });
+    </script>
+</body>
+</html>
